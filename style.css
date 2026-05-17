@@ -53,13 +53,17 @@ li {
   border-radius: 10px;
 }
 
-button {
+.btn {
   background: #ff66a3;
-  border: none;
   padding: 10px 15px;
   border-radius: 10px;
   color: white;
   cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #e05590;
 }
 
 button:hover {
@@ -73,4 +77,35 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p, li {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
 }
